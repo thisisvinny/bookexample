@@ -1,0 +1,8 @@
+<div class="menu">
+	<ul class="menu-list">
+		<a class="button is-light" href="{{ url_for('index') }}">Title Page</a>
+		{% for chapter in chapters %}
+			<li><a class="button is-light" href="/{{ chapter }}">Chapter {{ chapter }}</a></li>
+		{% endfor %}
+	</ul>
+</div>

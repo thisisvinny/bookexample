@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+	<div class="columns">
+		<div class="column is-one-fifth">
+			{% include "sidebar.html" %}
+		</div>
+		<div class="column">
+			<h1 class="title is-2">Sense and Sensibility by Jane Austen</h1>
+			<img src="{{ url_for('static', filename='images/title_img.jpg') }}" alt="book cover">
+		</div>
+	</div>
+</div>
+{% endblock %}
